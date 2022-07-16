@@ -44,5 +44,6 @@ func main() {
 		Handler: routes(&app),
 	}
 
+	log.Println("Starting server on port", portNumber)
 	err = srv.ListenAndServe()
 }
